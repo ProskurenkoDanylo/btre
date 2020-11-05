@@ -24,7 +24,7 @@ def listing(request, listing_id):
     return render(request, 'listings/listing.html', context)
 
 def search(request):
-    queryset_listing = Listing.objects.order_by('-list_date')
+    queryset_list = Listing.objects.order_by('-list_date')
 
     # Keywords
     if 'keywords' in request.GET:
@@ -54,7 +54,10 @@ def search(request):
     if 'price' in request.GET:
         price = request.GET['price']
         if price:
-            queryset_list = queryset_list.filter(price__lte=price)
+            if int(price) < 1000000:
+                queryset_list = queryset_list.filter(price__lte=price)
+            else:
+                queryset_list = queryset_list.filter(price__gte=price)
 
     context = {
         'state_choices': state_choices,

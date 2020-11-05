@@ -7,6 +7,7 @@ db.sqlite3
 db.sqlite3-journal
 static/
 media
+email_data.py
 venv/
 .vscode
 .idea/

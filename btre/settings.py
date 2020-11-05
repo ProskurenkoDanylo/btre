@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'kcqhv4o_ux3tu+7!oi_m3^$u_+_om1ql%j$rlpvw*x)5)@k1bv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -150,3 +150,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass

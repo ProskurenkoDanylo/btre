@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from .email_data import EMAIL_HOST_PASSWORD, EMAIL_HOST_USER
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

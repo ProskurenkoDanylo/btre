@@ -6,4 +6,4 @@ BT Real Estate is a Django application that allows you to register and login use
 Check it yourself!
 <br>
 <br>
-<a href="http://165.232.110.21/"><img src="https://i.ibb.co/pfYtLnn/image.png" alt="site" /></a>
+<a href="http://btre.top/"><img src="https://i.ibb.co/pfYtLnn/image.png" alt="site" /></a>
